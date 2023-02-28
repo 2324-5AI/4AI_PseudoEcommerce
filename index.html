@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/stile.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Vallaurilogo.png">
+    </header>
+    <main>
+        <section>
+            <article onclick="vis(34355)">
+                <span class="material-symbols-outlined">
+                        local_shipping
+                </span>
+                <div>
+                    <div>N. <span class="dato">34355</span></div>
+                    <div>Data ordine: <span class="dato">10/02/2023<span></span></div>
+                </div>
+            </article>
+
+            <article onclick="vis(34356)">
+                <span class="material-symbols-outlined">
+                    local_post_office
+                </span>
+                <div>
+                    <div>N. <span class="dato">34355</span></div>
+                    <div>Data ordine: <span class="dato">13/02/2023<span></span></div>
+                </div>
+            </article>
+
+            <article onclick="vis(34357)">
+                <span class="material-symbols-outlined">
+                        local_shipping
+                </span>
+                <div>
+                    <div>N. <span class="dato">34355</span></div>
+                    <div>Data ordine: <span class="dato">16/02/2023<span></span></div>
+                </div>
+            </article>
+
+        </section>
+
+        <div id="sfondoDivDettagli">
+            <div id="divDettagli">
+                L'ordine prevede i seguenti prodotti:
+                <table>
+                    <tr><th>Articolo</th><th>Quantità</th><th>Costo</th></tr>
+                    <tr><td>Sapone</td><td>2</td><td>4 €</td></tr>
+                    <tr><td>Felpa</td><td>1</td><td>10 €</td></tr>
+                    <tr><td>Tenda</td><td>1</td><td>29 €</td></tr>
+                    <tr><td>Maglietta</td><td>4</td><td>15 €</td></tr>
+                    <tr class="totale"><td>TOTALE</td><td>8</td><td>107 €</td></tr>
+                </table>
+                Inoltre, è previsto l'arrivo in data <span class="dataPrevista">30/02/2023.</span>
+                <button onclick="chiudi()">CHIUDI</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

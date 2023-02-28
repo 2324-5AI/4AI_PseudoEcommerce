@@ -1,0 +1,113 @@
+html{
+    background-color: #E0DDD6;
+    padding: 10px;
+}
+
+body{
+    background-color: #C7C5BF;
+    height: 95vh;
+}
+
+header{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>img{
+    width: 20%;
+}
+
+section{
+    margin-top:40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+article{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+    padding: 10px;
+
+    background-color: #E0DDD6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+article:hover{
+    filter:brightness(0.6);
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    font-size: 60pt;
+}
+
+.dato{
+    font-weight: bold;
+}
+
+#sfondoDivDettagli{
+    position: absolute;
+    top:0px;
+    left:0px;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#divDettagli{
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color:#A1B1C7 ;
+    border-radius: 10px;
+}
+
+table{
+    margin:10px;
+    width: 300px;
+    border:1px solid black;
+    text-align: center;
+}
+
+td{
+    border:1px solid black;
+}
+
+.totale, th{
+    background-color: #C0D3ED;
+}
+
+.dataPrevista{
+    font-weight: bold;
+}
+
+button{
+    background-color: #E0DDD6;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #C7C5BF;
+}
+
