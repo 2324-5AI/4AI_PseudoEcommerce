@@ -45,30 +45,3 @@ function vis(cod){
  */
 function chiudi(){
 }
-
-richiedi();
-
-function richiedi(){
-    let promise1 = fetch("http://localhost/2023-02_AsincRec/Server/prodotti.php", {method:'GET'}); 
-    let promise2 = fetch("http://localhost/2023-02_AsincRec/Server/ordini.php",{method:'GET'});
-
-    promise1.then(
-        async (risposta)=>{
-            //.json() restituisce una PROMISE gestita dall'await
-            let test = await risposta.json();
-            console.log(test);
-        }
-
-        //GESTISCO la PROMISE di .json SENZA AWAIT e ASYNC
-        //(risposta)=>{risposta.json().then((dati)=>{aggiornaFilm(dati)})}
-    )
-
- 
-    promise2.then(
-        async (risposta)=>{
-            //.json() restituisce una PROMISE gestita dall'await
-            let test = await risposta.json();
-            console.log(test);
-        }
-    )
-}
